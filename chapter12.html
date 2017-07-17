@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 12</title>
+</head>
+<body>
+	<form onsubmit = "return false" action = "#">
+		<label>Cost</label>
+		<input type = "number" id = "cost" value = "">
+		<label>Rate</label>
+				<input type = "number" id = "rate" value = "">
+			 <input type = "submit" value = "submit"
+			 		id = "submit" >
+	</form>
+	<h1>Total</h1>
+	<p id = "total"></p>
+
+<script>
+document.getElementById("submit").addEventListener("click", calculateTips, false);
+
+function calculateTips() {
+	var originalCost = parseInt(document.getElementById("cost").value);
+	var tipRate = parseInt(document.getElementById("rate").value)/100;
+	var totalCost = (originalCost * tipRate) + originalCost;
+
+document.getElementById("total").innerHTML = totalCost;
+};
+</script>
+</body>
+</html>
+
+<!--
+interface - to capture input(HTML)
+
+Input
+Original cost
+Tip rate
+
+Transformation - to turn input to output
+
+Output - your original plus tip rate
+
+Display - how you want to show your output
+need to select element and get the value of the element-->

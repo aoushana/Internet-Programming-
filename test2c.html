@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Test 2</title>
+</head>
+<body leftmargin = "25pix" >
+	<h1 id = "h1" style="font-size:20pt;">Adrena Oushana</h1>
+	<div id = "div">
+		<img id ="img"  width = "300" src="http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1487701021/eiffel-tower-paris-france-EIFFEL0217.jpg?itok=m0MZOYjh">
+	</div>
+	<ol id = "ol">
+		<li id = "li1">I love coffee</li>
+		<li id = "li2">I like to code shit</li>
+	</ol>
+
+	<script type="text/javascript">
+	
+function showPrompts(){
+	var favNumberOne = window.prompt("what is your favorite thing?");
+	var favNumberTwo = window.prompt("what is your second favorite thing?");
+	document.getElementById("ol").innerHTML = "<li>"+ favNumberOne + "</li><li>"+ favNumberTwo + "</li>"
+
+	// get elemdn from document will give you the ellemetn. i set inner html to a string
+
+	var result = window.confirm("Do you like google?");
+	if (result) {
+		// document.getElementById("div").innerHTML = "<img src = 'https://cdn.pixabay.com/photo/2016/08/25/01/29/google-1618520_960_720.jpg'>"
+ //get the div element ... assign innerHTML  to an imag element
+ document.getElementById("img").setAttribute("src", 'https://cdn.pixabay.com/photo/2016/08/25/01/29/google-1618520_960_720.jpg');
+}};
+	window.onload = showPrompts;
+	</script>
+</body>
+</html>

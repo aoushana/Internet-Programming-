@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homework2</title>
+	<script type="text/javascript">
+	       var accountNumber = window.prompt("what is your account number?");
+	       var beginningBalance = window.prompt("what is your beginning balance of the month?");
+	       var totalItemsCharged = window.prompt("what is your total of all items charged?");
+	       var totalCreditsCharged = window.prompt("what is your total all of credits applied this month?");
+	       var creditLimit = window.prompt("what is your allowed credit limit");
+	       var newBalance =  beginningBalance + totalItemsCharged - totalCreditsCharged;
+
+	               if (newBalance > creditLimit){
+	                       document.write("Credit limit exceeded.")
+	                   }
+										 document.write("<br>");
+	                   document.write("<h1>balance</h1>" + newBalance);
+	</script>
+</head>
+<body>
+</body>
+</html>

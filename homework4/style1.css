@@ -1,0 +1,8 @@
+body {
+    background-image: url('beach.jpg');
+    background-repeat: repeat-x;;
+    background-position: center;
+    padding:20px;
+    background-origin: content-box;
+    background-attachment: fixed;
+}
